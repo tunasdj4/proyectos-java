@@ -1,0 +1,25 @@
+public class ClasificadorBucles {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 10; i++) {
+            if (i % 2 == 0) {
+                switch (i) {
+                    case 2:
+                        System.out.println("El " + i + " es el primer número primo par");
+                        break;
+                    case 4:
+                        System.out.println("El " + i + " es un número compuesto y cuadrado perfecto.");
+                        break;
+                    case 6:
+                    case 8:
+                        System.out.println("El " + i + " está en el rango medio de pares.");
+                        break;
+                    default:
+                        System.out.println("El " + i + " es el número par más alto de la serie.");
+                        break;
+                }
+            }else {
+                System.out.println("Impar " + i);
+            }
+        }
+    }
+}
