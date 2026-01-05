@@ -13,17 +13,11 @@
         int lastFirstDigit = first % 10;
         int lastSecondDigit = second % 10;
         int lastThirdDigit = third % 10;
-        if ((lastFirstDigit == lastSecondDigit) || (lastFirstDigit == lastThirdDigit) || (lastSecondDigit == lastThirdDigit)) {
-            return true ;
-        }
-        return false;
+        return (lastFirstDigit == lastSecondDigit) || (lastFirstDigit == lastThirdDigit) || (lastSecondDigit == lastThirdDigit);
 
     }
 
     public static boolean isValid(int number) {
-        if (number >= 10 && number <= 1000) {
-            return true;
-        }
-        return false;
+        return (number >= 10 && number <= 1000);
     }
 }

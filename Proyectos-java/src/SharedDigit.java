@@ -12,10 +12,8 @@ public class SharedDigit {
         int lastDigit = digit % 10;
         int firstDigit = digit / 10;
         
-        if ((lastNumber == lastDigit) || (firstNumber == firstDigit) || (lastNumber == firstDigit) || (lastDigit == firstNumber) ) {
-            return true;
-        }
-        return false;
+        return (lastNumber == lastDigit) || (firstNumber == firstDigit) || (lastNumber == firstDigit) || (lastDigit == firstNumber);
+        
     }
     
 }
