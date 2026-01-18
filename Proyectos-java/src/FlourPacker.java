@@ -10,19 +10,12 @@ public class FlourPacker {
         if (goal > ((bigCount*5) + smallCount)) {
             return false;
         }
+
         int maxBigByGoal = goal / 5;
         int bigToUse = Math.min(bigCount, maxBigByGoal);
-
         int remainig   = goal - (bigToUse * 5);
 
-        if (smallCount >= remainig) {
-            return true;
-        }
-
-
-        return false;
-
-
+        return smallCount >= remainig;
     }
 
 
